@@ -2,6 +2,7 @@ import logo from "./logo.svg";
 import "./App.css";
 import React from "react";
 import StudentList from "./components/StudentList";
+import Alert from "./components/Alert";
 
 const studentList = [
 	{
@@ -21,6 +22,7 @@ const studentList = [
 function App() {
 	return (
 		<>
+			<Alert />
 			<StudentList list={studentList} />
 		</>
 	);
